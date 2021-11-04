@@ -1,6 +1,16 @@
 ---
+BasedOnStyle: Google
+IndentWidth: 2
+---
 Language: Cpp
-BasedOnStyle: Chromium
-
-IndentWidth: 4
-...
+Standard: c++20
+AlignConsecutiveAssignments: true
+AllowShortFunctionsOnASingleLine: false
+AllowShortBlocksOnASingleLine: false
+AllowAllParametersOfDeclarationOnNextLine: true
+BinPackParameters: false
+BinPackArguments: false
+ColumnLimit: 90
+---
+Language: Proto
+ColumnLimit: 100
