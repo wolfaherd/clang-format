@@ -13,7 +13,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        version: [10, 11]
+        version: [13, 14]
         style: [file, Chromium]
         include:
           - {style: file, exclude: test/chromium.cpp}
@@ -29,7 +29,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: clang-format (success)
         uses: ./
